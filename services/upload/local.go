@@ -38,6 +38,6 @@ func LocalCreateFile(cont *gin.Context) {
 	}
 
 	resp := models.UploadFileResp{}
-	resp.Params.FileName = fname
+	resp.Params.FileName = setting.ServerSetting.FileURL + fname
 	this.ResponseJsonMessage(resp)
 }

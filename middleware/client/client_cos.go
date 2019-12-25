@@ -8,6 +8,7 @@ import (
 	"github.com/tencentyun/cos-go-sdk-v5/debug"
 	"net/http"
 	"net/url"
+	"os"
 )
 
 func InitCosBucket(bucketName string) (client *cos.Client, err error) {
@@ -16,8 +17,10 @@ func InitCosBucket(bucketName string) (client *cos.Client, err error) {
 	if len(bucketName) == 0 {
 		client = cos.NewClient(nil, &http.Client{
 			Transport: &cos.AuthorizationTransport{
-				SecretID:  setting.TencentSetting.SecretID,
-				SecretKey: setting.TencentSetting.SecretKey,
+				//SecretID:  setting.TencentSetting.SecretID,
+				//SecretKey: setting.TencentSetting.SecretKey,
+				SecretID:  os.Getenv("COSSecretID"),
+				SecretKey: os.Getenv("COSSecretKey"),
 				Transport: &debug.DebugRequestTransport{
 					RequestHeader:  true,
 					RequestBody:    true,
@@ -42,8 +45,8 @@ func InitCosBucket(bucketName string) (client *cos.Client, err error) {
 		b := &cos.BaseURL{BucketURL: u}
 		client = cos.NewClient(b, &http.Client{
 			Transport: &cos.AuthorizationTransport{
-				SecretID:  setting.TencentSetting.SecretID,
-				SecretKey: setting.TencentSetting.SecretKey,
+				SecretID:  os.Getenv("COSSecretID"),
+				SecretKey: os.Getenv("COSSecretKey"),
 				Transport: &debug.DebugRequestTransport{
 					RequestHeader:  true,
 					RequestBody:    true,

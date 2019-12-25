@@ -21,6 +21,7 @@ type server struct {
 	WriteTimeout time.Duration
 	TokenExpire  int
 	FilePath     string
+	FileURL      string
 }
 
 var ServerSetting = &server{}
