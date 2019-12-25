@@ -3,6 +3,7 @@ package setting
 import (
 	"github.com/go-ini/ini"
 	"log"
+	"os"
 	"time"
 )
 
@@ -49,6 +50,9 @@ func Setup() {
 	mapTo("app", AppSetting)
 	mapTo("server", ServerSetting)
 	mapTo("tencent_cos", TencentSetting)
+
+	//os.Setenv("FileURL","http://localhost:8000")
+	ServerSetting.FileURL = os.Getenv("FileURL")
 
 	//AppSetting.ImageMaxSize = AppSetting.ImageMaxSize * 1024 * 1024
 	ServerSetting.ReadTimeout = ServerSetting.ReadTimeout * time.Second

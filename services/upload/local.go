@@ -14,6 +14,7 @@ import (
 
 //存储文件到服务器本地
 func LocalCreateFile(cont *gin.Context) {
+	println("werwerwerwerew")
 	logging.Info("CosCreateFile ...")
 	//var jparam models.UploadFileReq
 	this := app.Gin{Cont: cont}
@@ -36,8 +37,10 @@ func LocalCreateFile(cont *gin.Context) {
 		this.ResponseJsonError(app.ERROR_UPLOAD_FILE)
 		return
 	}
+	//fileurl := os.Getenv("FILEURL")
 
-	resp := models.UploadFileResp{}
-	resp.Params.FileName = setting.ServerSetting.FileURL + fname
-	this.ResponseJsonMessage(resp)
+	resp := models.UploadFile{}
+	resp.FileName = setting.ServerSetting.FileURL + fname
+
+	this.ResponseJsonData(resp)
 }

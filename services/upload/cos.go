@@ -85,6 +85,6 @@ func CosCreateFile(cont *gin.Context) {
 	logging.Debug("res:%+v", res)
 
 	resp := models.UploadFileResp{}
-	resp.Params.FileName = fname
+	resp.Data.FileName = fname
 	this.ResponseJsonMessage(resp)
 }

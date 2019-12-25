@@ -18,16 +18,16 @@ type BucketList struct {
 //桶列表响应信息
 type BucketListResp struct {
 	Response
-	Params []BucketList `json:"params"`
+	Data []BucketList `json:"data"`
 }
 
 //文件
 type UploadFile struct {
-	FileName string `json:"file_name"`
+	FileName string `json:"url"`
 }
 
 //上传文件响应信息
 type UploadFileResp struct {
 	Response
-	Params UploadFile `json:"params"`
+	Data UploadFile `json:"data"`
 }

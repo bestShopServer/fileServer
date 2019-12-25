@@ -60,6 +60,16 @@ func (this *Gin) ResponseJsonMessage(obj interface{}) {
 		logging.Debug("Response Data: %v", string(jtmp))
 	}
 	this.Cont.JSON(http.StatusOK, obj)
+	println(1)
+}
+
+func (this *Gin) ResponseJsonData(obj interface{}) {
+
+	this.Cont.JSON(http.StatusOK, Response{
+		Code: SUCCESS,
+		Msg:  GetMsg(SUCCESS),
+		Data: obj,
+	})
 }
 
 // Response setting gin.XML

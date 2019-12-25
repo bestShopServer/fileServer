@@ -1,10 +1,10 @@
 package app
 
 const (
-	SUCCESS            = 0
+	SUCCESS            = 10000
 	ERROR              = 500
 	INVALID_PARAMS     = 400
-	ERROR_DEFAULT      = 10000
+	ERROR_DEFAULT      = 10003
 	ERROR_PARAMS_PARSE = 10001
 	ERROR_UPLOAD_FILE  = 10002
 
