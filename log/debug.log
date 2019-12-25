@@ -1,0 +1,289 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (3 handlers)
+[GIN-debug] POST   /v1/upload/local          --> file_service/services/upload.LocalCreateFile (3 handlers)
+[GIN-debug] POST   /v1/upload/cos            --> file_service/services/upload.CosCreateFile (3 handlers)
+2019-12-26 01:45:33|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:45:36|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:45:36|ERROR|local.go|36|File Image ERR[open static/fils/1577295936SPNYKOff3S.jpg: The system cannot find the path specified.]
+2019-12-26 01:45:36|ERROR|respone.go|48|code:10002
+[GIN] 2019/12/26 - 01:45:36 | 200 |      8.9795ms |       127.0.0.1 | POST     /v1/upload/local
+2019-12-26 01:45:55|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:45:55|ERROR|local.go|36|File Image ERR[open static/fils/1577295955ReEZN6kwfG.jpg: The system cannot find the path specified.]
+2019-12-26 01:45:55|ERROR|respone.go|48|code:10002
+[GIN] 2019/12/26 - 01:45:55 | 200 |     34.9078ms |       127.0.0.1 | POST     /v1/upload/local
+2019-12-26 01:46:07|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:46:07|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577295967QnXwC4dD3t.jpg"}}
+[GIN] 2019/12/26 - 01:46:07 | 200 |     15.9566ms |       127.0.0.1 | POST     /v1/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (3 handlers)
+[GIN-debug] POST   /v1/upload/local          --> file_service/services/upload.LocalCreateFile (3 handlers)
+[GIN-debug] POST   /v1/upload/cos            --> file_service/services/upload.CosCreateFile (3 handlers)
+2019-12-26 01:49:29|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:49:32|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:49:32|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296172cvSATvtvVN.jpg"}}
+[GIN] 2019/12/26 - 01:49:32 | 200 |     11.9718ms |       127.0.0.1 | POST     /v1/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (3 handlers)
+[GIN-debug] POST   /v1/upload/local          --> file_service/services/upload.LocalCreateFile (3 handlers)
+[GIN-debug] POST   /v1/upload/cos            --> file_service/services/upload.CosCreateFile (3 handlers)
+2019-12-26 01:49:58|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:50:00|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:50:00|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"http://localhost:8000static/fils/1577296200WoUgM1DE2T.jpg"}}
+[GIN] 2019/12/26 - 01:50:00 | 200 |     13.9629ms |       127.0.0.1 | POST     /v1/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (3 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (3 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (3 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (3 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (3 handlers)
+2019-12-26 01:51:46|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+[GIN] 2019/12/26 - 01:51:52 | 404 |            0s |       127.0.0.1 | OPTIONS  /v1/upload/local
+[GIN] 2019/12/26 - 01:52:02 | 404 |            0s |       127.0.0.1 | OPTIONS  /v1/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (4 handlers)
+2019-12-26 01:55:14|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+[GIN] 2019/12/26 - 01:55:19 | 204 |            0s |       127.0.0.1 | OPTIONS  /v1/upload/local
+[GIN] 2019/12/26 - 01:55:25 | 404 |            0s |       127.0.0.1 | POST     /v1/upload/local
+[GIN] 2019/12/26 - 01:55:38 | 204 |            0s |       127.0.0.1 | OPTIONS  /test/upload/local
+2019-12-26 01:55:42|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:55:42|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296542ntryFDNFkE.jpg"}}
+[GIN] 2019/12/26 - 01:55:42 | 200 |     16.9572ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (4 handlers)
+2019-12-26 01:56:13|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (4 handlers)
+2019-12-26 01:56:19|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:56:23|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:56:23|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296583LTkVcONn2J.jpg"}}
+[GIN] 2019/12/26 - 01:56:23 | 200 |     11.9684ms |       127.0.0.1 | POST     /test/upload/local
+2019-12-26 01:56:29|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:56:29|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296589zIMKNZZ31M.jpg"}}
+[GIN] 2019/12/26 - 01:56:29 | 200 |     39.8924ms |       127.0.0.1 | OPTIONS  /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (4 handlers)
+2019-12-26 01:56:59|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:57:05|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:57:05|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296625484C8ZgAab.jpg"}}
+[GIN] 2019/12/26 - 01:57:05 | 200 |     15.9502ms |       127.0.0.1 | OPTIONS  /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/create --> file_service/services/bucket.CreateCosBucket (4 handlers)
+[GIN-debug] POST   /v1/conf/cos/bucket/list  --> file_service/services/bucket.ListBucket (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] POST   /test/upload/cos          --> file_service/services/upload.CosCreateFile (4 handlers)
+2019-12-26 01:57:27|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:57:29|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:57:29|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296649nTn4OJ7STT.jpg"}}
+[GIN] 2019/12/26 - 01:57:29 | 200 |     14.9585ms |       127.0.0.1 | OPTIONS  /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 01:59:09|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:59:15|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:59:15|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/15772967556kkXPVeG39.jpg"}}
+[GIN] 2019/12/26 - 01:59:15 | 200 |     12.9656ms |       127.0.0.1 | OPTIONS  /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 01:59:38|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 01:59:41|INFO|local.go|18|CosCreateFile ...
+2019-12-26 01:59:41|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/15772967811ZtJ7wZ44W.jpg"}}
+[GIN] 2019/12/26 - 01:59:41 | 200 |      12.988ms |       127.0.0.1 | OPTIONS  /test/upload/local
+2019-12-26 02:00:58|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:00:58|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296858oAUrDWrYTt.jpg"}}
+[GIN] 2019/12/26 - 02:00:58 | 200 |     15.9568ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:01:28|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:01:30|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:01:30|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","params":{"file_name":"static/fils/1577296890ztgLPv3TiI.jpg"}}
+[GIN] 2019/12/26 - 02:01:30 | 200 |     11.9681ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:03:01|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:03:04|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:03:04|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","data":{"file_name":"static/fils/1577296984OCAEETiuRe.jpg"}}
+[GIN] 2019/12/26 - 02:03:04 | 200 |     12.9628ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:05:00|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:05:11|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:05:15|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:05:15|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","data":{"file_name":"static/fils/1577297115vhIyIvtli6.jpg"}}
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:12:20|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:12:22|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:12:22|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","data":{"file_name":"static/fils/1577297542kWwjH64FIQ.jpg"}}
+[GIN] 2019/12/26 - 02:12:22 | 200 |     24.9328ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:13:46|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:13:48|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:13:48|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","data":{"file_name":"static/fils/1577297628Z6U0oyxDYf.jpg"}}
+[GIN] 2019/12/26 - 02:13:48 | 200 |     30.9177ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:15:10|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:15:13|INFO|local.go|18|CosCreateFile ...
+2019-12-26 02:15:13|DEBUG|respone.go|60|Response Data: {"code":0,"msg":"","notice":"","data":{"file_name":"static/fils/1577297713WXBc0kDNlc.jpg"}}
+[GIN] 2019/12/26 - 02:15:13 | 200 |     37.8993ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:19:22|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:19:25|INFO|local.go|18|CosCreateFile ...
+[GIN] 2019/12/26 - 02:19:25 | 200 |     15.9574ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /test/upload/local        --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:19:55|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+2019-12-26 02:19:59|INFO|local.go|18|CosCreateFile ...
+[GIN] 2019/12/26 - 02:19:59 | 200 |     16.9544ms |       127.0.0.1 | POST     /test/upload/local
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /baseshop/upload/local    --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /baseshop/upload/local    --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:28:00|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /ping                     --> file_service/routers.InitRouter.func1 (4 handlers)
+[GIN-debug] POST   /baseshop/upload/local    --> file_service/services/upload.LocalCreateFile (4 handlers)
+[GIN-debug] OPTIONS /baseshop/upload/local    --> file_service/services/upload.LocalCreateFile (4 handlers)
+2019-12-26 02:28:50|INFO|main.go|46|服务正常启动 listening[127.0.0.1:10050]
+

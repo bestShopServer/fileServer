@@ -11,7 +11,7 @@ RUN apk add --no-cache tzdata && \
 	mkdir -p /server/log && \
 	mkdir -p /server/static/fils && \
 	cp -r /tmpMake/main /server/ && \
-	cp -r /tmpMake/conf /server
+	cp -r /tmpMake/config /server
 
 WORKDIR /server
 

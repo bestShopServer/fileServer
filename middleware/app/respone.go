@@ -59,6 +59,7 @@ func (this *Gin) ResponseJsonMessage(obj interface{}) {
 	if err == nil {
 		logging.Debug("Response Data: %v", string(jtmp))
 	}
+
 	this.Cont.JSON(http.StatusOK, obj)
 	println(1)
 }
