@@ -2,7 +2,7 @@ package models
 
 //公共响应信息
 type Response struct {
-	Code   int    `json:"code"`
+	Code   string `json:"code"`
 	Msg    string `json:"msg"`
 	Notice string `json:"notice"`
 }

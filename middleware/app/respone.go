@@ -6,6 +6,7 @@ import (
 	"file_service/utils/logging"
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"strconv"
 )
 
 type Gin struct {
@@ -13,7 +14,7 @@ type Gin struct {
 }
 
 type Response struct {
-	Code int         `json:"code"`
+	Code string      `json:"code"`
 	Msg  string      `json:"msg"`
 	Data interface{} `json:"data"`
 }
@@ -27,7 +28,7 @@ func (this *Gin) Response(httpCode, errCode int, data interface{}) {
 	}
 
 	this.Cont.JSON(httpCode, Response{
-		Code: errCode,
+		Code: strconv.Itoa(errCode),
 		Msg:  GetMsg(errCode),
 		Data: data,
 	})
@@ -38,7 +39,7 @@ func (this *Gin) Response(httpCode, errCode int, data interface{}) {
 func (this *Gin) ResponseJsonSuccess() {
 	logging.Info("%v", http.StatusOK)
 	this.Cont.JSON(http.StatusOK, Response{
-		Code: SUCCESS,
+		Code: strconv.Itoa(SUCCESS),
 		Msg:  GetMsg(SUCCESS),
 	})
 }
@@ -47,7 +48,7 @@ func (this *Gin) ResponseJsonSuccess() {
 func (this *Gin) ResponseJsonError(code int) {
 	logging.Error("code:%v", code)
 	this.Cont.JSON(http.StatusOK, Response{
-		Code: code,
+		Code: strconv.Itoa(code),
 		Msg:  GetMsg(code),
 	})
 	this.Cont.Abort()
@@ -67,7 +68,7 @@ func (this *Gin) ResponseJsonMessage(obj interface{}) {
 func (this *Gin) ResponseJsonData(obj interface{}) {
 
 	this.Cont.JSON(http.StatusOK, Response{
-		Code: SUCCESS,
+		Code: strconv.Itoa(SUCCESS),
 		Msg:  GetMsg(SUCCESS),
 		Data: obj,
 	})
@@ -76,7 +77,7 @@ func (this *Gin) ResponseJsonData(obj interface{}) {
 // Response setting gin.XML
 func (this *Gin) ResponseXmlSuccess() {
 	this.Cont.JSON(http.StatusOK, Response{
-		Code: SUCCESS,
+		Code: strconv.Itoa(SUCCESS),
 		Msg:  GetMsg(SUCCESS),
 	})
 	logging.Info("%v", http.StatusOK)
