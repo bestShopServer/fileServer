@@ -32,9 +32,9 @@ func InitRouter() *gin.Engine {
 	apiUp := r.Group("/baseshop/upload")
 	{
 		//上传文件到本地服务器
-		apiUp.POST("/local", upload.LocalCreateFile)
+		apiUp.POST("/", upload.LocalCreateFile)
 		//上传文件到本地服务器
-		apiUp.OPTIONS("/local", upload.LocalCreateFile)
+		apiUp.OPTIONS("/", upload.LocalCreateFile)
 	}
 	return r
 }
